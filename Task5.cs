@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CLightModul4
 {
-    class Task4
+    class Task5
     {
         /*
          static void Main(string[] args)
