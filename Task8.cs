@@ -30,6 +30,17 @@ namespace CLightModul4
             statValue = operation == "+" ? statValue + operandPoints : statValue - operandPoints;
             points = operation == "+" ? points - operandPoints : points + operandPoints;
         }
+
+        static int RightNumber()
+        {
+            string numberRaw;
+            int userNumber = 0;
+            do
+            {
+                numberRaw = Console.ReadLine();
+            } while (!int.TryParse(numberRaw, out userNumber));
+            return userNumber;
+        }
         static void Main(string[] args)
         {
             int age = 0, strength = 0, agility = 0, intelligence = 0, points = 25;
@@ -61,12 +72,7 @@ namespace CLightModul4
                 Console.WriteLine(@"Колличество поинтов которые следует {0}", operation == "+" ? "прибавить" : "отнять");
 
                 string operandPointsRaw = string.Empty;
-                int operandPoints = 0;
-                do
-                {
-                    operandPointsRaw = Console.ReadLine();
-                } while (!int.TryParse(operandPointsRaw, out operandPoints));
-
+                int operandPoints = RightNumber();
                 switch (subject.ToLower())
                 {
                     case "сила":
@@ -82,11 +88,7 @@ namespace CLightModul4
             }
 
             Console.WriteLine("Вы распределили все очки. Введите возраст персонажа:");
-            string ageRaw = string.Empty;
-            do
-            {
-                ageRaw = Console.ReadLine();
-            } while (!int.TryParse(ageRaw, out age));
+            age = RightNumber();
 
 
             Console.Clear();
