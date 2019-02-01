@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Task2.cs" />
-    <Compile Include="Task3.cs" />
+    <None Include="Task3.cs" />
+    <Compile Include="Task4.cs" />
     <Compile Include="Task5.cs" />
     <None Include="Task8.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
