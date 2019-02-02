@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Task6.cs" />
+    <None Include="Task7.cs" />
+    <None Include="Task6.cs" />
     <None Include="Task2.cs" />
     <None Include="Task3.cs" />
     <None Include="Task4.cs" />
-    <Compile Include="Task5.cs" />
+    <None Include="Task5.cs" />
     <None Include="Task8.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
